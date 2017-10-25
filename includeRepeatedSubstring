@@ -1,0 +1,18 @@
+function toIncludeRepeated(substrings, times){
+  let subs = substrings.repeat(times);
+  var nim = /substrings/gi;
+  var word = [];
+  for(var i=0; i < subs.length; i++){
+    if(subs[i] == substrings.charAt(substrings.lastIndexOf(substrings))){
+     word = subs.slice(subs.lastIndexOf(substrings));
+     nim = word + ' ' + substrings;
+    }
+     
+   
+  }
+  
+  
+ return nim;
+}
+
+toIncludeRepeated('below', 2);
